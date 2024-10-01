@@ -25,6 +25,16 @@
   - port_protocol_counts.csv: Contains the counts of each port/protocol combination.
 - Main function: The program coordinates reading the lookup table, parsing the logs, and writing the output files.
 
+## Steps to reproduce
+
+- Clone the git repository or paste the python script in your code editor
+- Remove the output files (tag_counts.csv, port_protocol_counts.csv) from the directory
+- Place the flow log file (e.g., flow_logs.txt) and lookup table file (e.g., lookup_table.csv) in the same directory as the Python script.
+- Run the script: ``` python flow_log_parser.py ````
+- The output will be generated in two CSV files:
+  - tag_counts.csv
+  - port_protocol_counts.csv
+
 ## Sample output
 
 #### tag_counts.csv
