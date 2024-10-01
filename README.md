@@ -24,3 +24,35 @@
   - tag_counts.csv: Contains the counts of each tag.
   - port_protocol_counts.csv: Contains the counts of each port/protocol combination.
 - Main function: The program coordinates reading the lookup table, parsing the logs, and writing the output files.
+
+## Sample output
+
+#### tag_counts.csv
+
+```
+Tag,Count
+Untagged,8
+email ,3
+sv_P1 ,2
+sv_P2 ,1
+```
+
+#### port_protocol_count.csv
+
+```
+Port,Protocol,Count
+23,tcp,1
+25,tcp,1
+80,tcp,1
+110,tcp,1
+143,tcp,1
+443,tcp,1
+993,tcp,1
+1024,tcp,1
+1030,tcp,1
+49152,tcp,1
+49153,tcp,1
+49154,tcp,1
+49321,tcp,1
+56000,tcp,1
+```
