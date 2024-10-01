@@ -15,3 +15,12 @@
 - Generate output: The program will generate two output reports:
   - A count of matches for each tag.
   - A count of matches for each unique port/protocol combination.
+
+## Explanation for each function in the source code
+
+- load_lookup_table: This function reads the lookup table CSV and stores it in a dictionary where the key is a tuple (dstport, protocol) and the value is the tag.
+- parse_flow_logs: This function reads each flow log, extracts the destination port and protocol, and attempts to find a matching tag from the lookup table. It updates counts for both tags and port/protocol combinations.
+- write_output: This function writes two output files:
+  - tag_counts.csv: Contains the counts of each tag.
+  - port_protocol_counts.csv: Contains the counts of each port/protocol combination.
+- Main function: The program coordinates reading the lookup table, parsing the logs, and writing the output files.
